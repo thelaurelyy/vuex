@@ -10,8 +10,8 @@ const state = {
 
 //改变state的数值的方法，必须写在mutations里
 const mutations = {
-  add(state){
-    state.count++;
+  add(state, n){
+    state.count += n;
   },
   reduce(state){
     state.count--;

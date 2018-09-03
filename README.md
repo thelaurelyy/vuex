@@ -105,3 +105,58 @@
         //法三：也是最常用的方法
         import { mapState } from 'vuex';
         computed: mapState(['count']),
+
+
+第三讲 Mutations修改状态
+---
+（1）实现参数的传递，注意：**$store.commit(funcName, (val0：默认为state),val1)**
+
+        //改变state的数值的方法，必须写在mutations里
+        const mutations = {
+          add(state, n){
+            state.count += n;
+          },
+          reduce(state){
+            state.count--;
+          }
+        }
+
+        <div>
+            <button @click="$store.commit('add', 6)">+</button>
+            <button @click="$store.commit('reduce')">-</button>
+        </div>
+
+（2）简化调用方法，引用mapMutations
+
+        <template>
+            <div>
+                <h2>{{msg}}</h2>
+                <br>
+                <h3>{{$store.state.count}}-{{count}}</h3>
+                <div>
+                    <!--
+                      <button @click="$store.commit('add', 6)">+</button>
+                      <button @click="$store.commit('reduce')">-</button>
+                    -->
+                    <button @click="add(6)">+</button>
+                    <button @click="reduce">-</button>
+                </div>
+            </div>
+        </template>
+
+        <script>
+            import store from '@/vuex/store.js';
+            import { mapState, mapMutations } from 'vuex';
+
+            export default {
+                name: "count",
+                data(){
+                  return {
+                    msg: "Hello Vuex",
+                  }
+                },
+                computed: mapState(['count']),
+                methods: mapMutations(['add', 'reduce']),
+                store
+            }
+        </script>

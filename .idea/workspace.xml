@@ -5,6 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vuexLearning/src/components/count.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vuexLearning/src/components/count.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuexLearning/src/vuex/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/vuexLearning/src/vuex/store.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -43,28 +44,28 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="270" />
-          <entry key="md" value="746" />
+          <entry key="js" value="278" />
+          <entry key="md" value="905" />
           <entry key="txt" value="23" />
-          <entry key="vue" value="443" />
+          <entry key="vue" value="493" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JavaScript" value="270" />
-          <entry key="PLAIN_TEXT" value="769" />
-          <entry key="Vue.js" value="443" />
+          <entry key="JavaScript" value="278" />
+          <entry key="PLAIN_TEXT" value="928" />
+          <entry key="Vue.js" value="493" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="91" column="13" lean-forward="true" selection-start-line="91" selection-start-column="13" selection-end-line="91" selection-end-column="13" />
+            <state relative-caret-position="231">
+              <caret line="113" column="31" selection-start-line="113" selection-start-column="31" selection-end-line="113" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -72,8 +73,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vuexLearning/src/vuex/store.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="650">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="364">
+              <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
               </folding>
@@ -90,13 +91,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vuexLearning/src/components/count.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="650">
-              <caret line="37" column="38" lean-forward="true" selection-start-line="36" selection-start-column="8" selection-end-line="37" selection-end-column="38" />
+            <state relative-caret-position="520">
+              <caret line="20" column="15" lean-forward="true" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
               <folding>
-                <element signature="e#301#337#0" expanded="true" />
+                <element signature="e#304#340#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -118,6 +119,7 @@
       <find>browserslist</find>
       <find>node</find>
       <find>vuex</find>
+      <find>mapMutations</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -130,8 +132,8 @@
         <option value="$PROJECT_DIR$/vuexLearning/src/components/count.vue.html" />
         <option value="$PROJECT_DIR$/vuexLearning/src/router/index.js" />
         <option value="$PROJECT_DIR$/vuexLearning/src/vuex/store.js" />
-        <option value="$PROJECT_DIR$/vuexLearning/src/components/count.vue" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/vuexLearning/src/components/count.vue" />
       </list>
     </option>
   </component>
@@ -245,7 +247,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1535952764124</updated>
-      <workItem from="1535952765381" duration="10676000" />
+      <workItem from="1535952765381" duration="13028000" />
     </task>
     <task id="LOCAL-00001" summary="【讲义】第一讲 vuex的demo">
       <created>1535963351741</created>
@@ -268,11 +270,18 @@
       <option name="project" value="LOCAL" />
       <updated>1535964132673</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="【讲义】第一讲 vuex的demo">
+      <created>1535967333107</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1535967333107</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10676000" />
+    <option name="totallyTimeSpent" value="13028000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -373,16 +382,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vuexLearning/src/vuex/store.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vuexLearning/src/router/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52">
@@ -390,20 +389,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vuexLearning/src/components/count.vue">
+    <entry file="file://$PROJECT_DIR$/vuexLearning/src/vuex/store.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="37" column="38" lean-forward="true" selection-start-line="36" selection-start-column="8" selection-end-line="37" selection-end-column="38" />
+        <state relative-caret-position="364">
+          <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
           <folding>
-            <element signature="e#301#337#0" expanded="true" />
+            <element signature="e#0#22#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="91" column="13" lean-forward="true" selection-start-line="91" selection-start-column="13" selection-end-line="91" selection-end-column="13" />
+        <state relative-caret-position="231">
+          <caret line="113" column="31" selection-start-line="113" selection-start-column="31" selection-end-line="113" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vuexLearning/src/components/count.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="20" column="15" lean-forward="true" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
+          <folding>
+            <element signature="e#304#340#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

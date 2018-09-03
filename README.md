@@ -82,6 +82,26 @@
     }
 
 
-第二讲
+第二讲 state访问状态对象
 ---
+>SPA共享值 => 状态（封装为对象） => 状态对象
+>改变状态对象的方法，将其称之为mutations
 
+有三种办法可以直接在界面模板中使用状态参数，其中第三种方法为最常用的方法：
+
+        //法一：
+        computed:{
+          count(){
+            return this.$store.state.count;
+          }
+        }
+
+        //法二：
+        import { mapState } from 'vuex';
+        computed: mapState({
+          count: state => state.count
+        })
+
+        //法三：也是最常用的方法
+        import { mapState } from 'vuex';
+        computed: mapState(['count']),

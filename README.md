@@ -41,7 +41,7 @@
         });
 
 （4）新建模板components/count.vue ，首先要在模板中引用store.js，并在模板中利用 **$store.state.count** 输出count的值；  <br>
-注意：**如何调用mutations中的方法**
+     注意：**如何调用mutations中的方法**
 
         <template>
             <div>
@@ -69,4 +69,19 @@
                 store
             }
         </script>
+
+（5）注意： **模板中一定要有包裹的标签div** ，否则会编译错误 <br>
+     在router/index.js文件中配置count.vue界面的路由
+
+    import Count from '@/components/count'
+
+    {
+      path: '/count',
+      name: 'Count',
+      component: Count
+    }
+
+
+第二讲
+---
 

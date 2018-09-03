@@ -7,7 +7,7 @@
 
 第一讲 vuex的demo
 ---
-根据文字讲义按步骤进行，实现按钮加减分数的vuexdemo  <br>
+根据文字讲义按步骤进行，实现按钮加减分数的vuex的demo  <br>
 （1）利用webpack模板初始化项目，并安装vuex
 
         vue init webpack vuexLearning
@@ -40,8 +40,8 @@
           mutations
         });
 
-（4）新建模板components/count.vue ，首先要在模板中引用store.js，并在模板中利用 ** $store.state.count ** 输出count的值；  <br>
-注意：** 如何调用mutations中的方法 **
+（4）新建模板components/count.vue ，首先要在模板中引用store.js，并在模板中利用 **$store.state.count** 输出count的值；  <br>
+注意：**如何调用mutations中的方法**
 
         <template>
             <div>

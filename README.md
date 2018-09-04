@@ -215,8 +215,66 @@
         </script>
 
 
+第五讲 actions异步修改状态
+---
+    mutations 同步修改状态
+    actions 异步修改状态
+    actions可以调用mutations里的方法
+
+（1）在vuex/store.js中编写actions的方法，然后暴露出来
+
+        //异步修改状态
+        const actions = {
+          addActions(context){    //context 上下文对象，这里等同于 store
+            context.commit('add', 10);
+            setTimeout(()=> {context.commit('reduce')}, 3000);
+            console.log("程序异步，我比reduce先执行");
+          },
+          reduceActions({commit}){
+            commit('reduce');
+          }
+        }
 
 
+        export default  new Vuex.Store({
+          state,
+          mutations,
+          getters,
+          actions
+        });
+
+（2）在模板界面中引用 mapActions，在vue作用域methods属性值中配置拓展信息。
+
+        <div>
+              异步修改数据状态：
+              <button @click="addActions(10)">+</button>
+              <button @click="reduceActions">-</button>
+        </div>
+
+        <script>
+            import store from '@/vuex/store.js';
+            import { mapState, mapMutations, mapGetters, mapActions } from 'vuex';
+
+            export default {
+                name: "count",
+                data(){
+                  return {
+                    msg: "Hello Vuex",
+                  }
+                },
+                //法三：也是最常用的方法
+                computed: {
+                  ...mapState(['count']),
+                  ...mapGetters(['count'])
+                },
+                // methods: mapMutations(['add', 'reduce']),
+              '''  methods: {
+                  ...mapMutations(['add', 'reduce']),
+                  ...mapActions(['addActions', 'reduceActions'])
+                }, '''
+                store
+            }
+        </script>
 
 
 

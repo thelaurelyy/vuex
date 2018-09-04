@@ -3,7 +3,7 @@ import Vuex from 'vuex';
 
 Vue.use(Vuex);     //引用Vuex
 
-
+//状态对象
 const state = {
   count: 1
 }
@@ -25,9 +25,22 @@ const getters = {
     }
 }
 
+//异步修改状态
+const actions = {
+  addActions(context){    //context 上下文对象，这里等同于 store
+    context.commit('add', 10);
+    setTimeout(()=> {context.commit('reduce')}, 3000);
+    console.log("程序异步，我比reduce先执行");
+  },
+  reduceActions({commit}){
+    commit('reduce');
+  }
+}
+
 
 export default  new Vuex.Store({
   state,
   mutations,
-  getters
+  getters,
+  actions
 });

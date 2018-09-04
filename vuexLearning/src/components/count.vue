@@ -14,7 +14,7 @@
 
 <script>
     import store from '@/vuex/store.js';
-    import { mapState, mapMutations } from 'vuex';
+    import { mapState, mapMutations, mapGetters } from 'vuex';
 
     export default {
         name: "count",
@@ -29,14 +29,26 @@
           count(){
             return this.$store.state.count;
           }
-        },*/
+        },
+        */
         /*
         //法二：
         computed: mapState({
           count: state => state.count
-        }),*/
+        }),
+        */
         //法三：也是最常用的方法
+        /*
         computed: mapState(['count']),
+        可将其简写为如下所示：利用ES6拓展语法  （合并对象？）
+        */
+        computed: {
+          ...mapState(['count']),
+          /*count() {
+            return this.$store.getters.count;
+          }*/
+          ...mapGetters(['count'])
+        },
         methods: mapMutations(['add', 'reduce']),
         store
     }

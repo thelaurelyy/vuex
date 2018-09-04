@@ -160,3 +160,77 @@
                 store
             }
         </script>
+
+
+第四讲 getters计算过滤操作
+---
+####学习小结
+在我们学习完状态管理器（state）、数据修改（mutations）后，接下来学习的是vuex数据的过滤加工（getters）。  <br>
+（1）个人理解：其实我们可以将vuex中的这几部分类比为vue对象中的data、methods、computed，分别用于数据变量声明与存储、数据修改、过滤加工。 <br>
+（2）需要注意的是，vuex的状态管理器（state）和过滤加工（getters）都在 vue作用域中computed属性值里引用，数据修改（mutations）在methods中引用。
+
+####练习步骤
+（1）在vuex/store.js中声明getters并对数据进行过滤加工，然后将getters暴露出来。
+
+        //数据过滤
+        const getters = {
+            count: function (state) {
+                return state.count += 100;
+            }
+        }
+
+        export default  new Vuex.Store({
+          state,
+          mutations,
+          getters
+        });
+
+（2）在模板界面中引用 mapGetters ，利用ES6的拓展语法，重新设置computed属性值。
+    Q：如果在这里利用es6的拓展语法，那么还需要引用store.js吗？
+    A：需要！数据及其方法仍在store.js中定义，引用vuex和es6的语法，只是为了简写代码使更优美。
+
+        <script>
+            import store from '@/vuex/store.js';
+            import { mapState, mapMutations, mapGetters } from 'vuex';
+
+            export default {
+                name: "count",
+                data(){
+                  return {
+                    msg: "Hello Vuex",
+                  }
+                },
+                //法三：也是最常用的方法
+                /* computed: mapState(['count']), */
+                computed: {
+                  ...mapState(['count']),
+                  ...mapGetters(['count'])      /*  count() { return this.$store.getters.count; }  */
+                },
+                methods: mapMutations(['add', 'reduce']),
+                store
+            }
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

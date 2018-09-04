@@ -268,10 +268,10 @@
                   ...mapGetters(['count'])
                 },
                 // methods: mapMutations(['add', 'reduce']),
-              '''  methods: {
+              ```  methods: {
                   ...mapMutations(['add', 'reduce']),
                   ...mapActions(['addActions', 'reduceActions'])
-                }, '''
+                }, ```
                 store
             }
         </script>

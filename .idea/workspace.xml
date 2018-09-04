@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a31899d8-8e5d-482c-916c-78475ffe05c5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vuexLearning/src/components/count.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vuexLearning/src/components/count.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vuexLearning/src/vuex/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/vuexLearning/src/vuex/store.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -47,7 +44,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="js" value="358" />
-          <entry key="md" value="1572" />
+          <entry key="md" value="1589" />
           <entry key="txt" value="23" />
           <entry key="vue" value="641" />
         </counts>
@@ -55,7 +52,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JavaScript" value="358" />
-          <entry key="PLAIN_TEXT" value="1595" />
+          <entry key="PLAIN_TEXT" value="1612" />
           <entry key="Vue.js" value="641" />
         </counts>
       </usages-collector>
@@ -71,8 +68,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
-              <caret line="164" column="17" selection-start-line="164" selection-start-column="4" selection-end-line="164" selection-end-column="17" />
+            <state relative-caret-position="193">
+              <caret line="165" column="3" lean-forward="true" selection-start-line="165" selection-start-column="3" selection-end-line="165" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -257,7 +254,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1535952764124</updated>
-      <workItem from="1535952765381" duration="22117000" />
+      <workItem from="1535952765381" duration="22382000" />
     </task>
     <task id="LOCAL-00001" summary="【讲义】第一讲 vuex的demo">
       <created>1535963351741</created>
@@ -291,7 +288,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22117000" />
+    <option name="totallyTimeSpent" value="22382000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -436,8 +433,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="164" column="17" selection-start-line="164" selection-start-column="4" selection-end-line="164" selection-end-column="17" />
+        <state relative-caret-position="193">
+          <caret line="165" column="3" lean-forward="true" selection-start-line="165" selection-start-column="3" selection-end-line="165" selection-end-column="3" />
         </state>
       </provider>
     </entry>

@@ -3,17 +3,17 @@
         <h2>{{msg}}</h2>
         <br>
 
-        <h3>{{$store.state.count}}-{{count}}</h3>
+        <h3>{{$store.state.a.count}}-{{count}}</h3>
 
         <div>
             同步修改数据状态：
-            <button @click="add(10)">+</button>
-            <button @click="reduce">-</button>
+            <button @click="add(10)">+10</button>
+            <button @click="reduce">-1</button>
         </div>
         <div>
           异步修改数据状态：
-          <button @click="addActions(10)">+</button>
-          <button @click="reduceActions">-</button>
+          <button @click="addActions(10)">+10</button>
+          <button @click="reduceActions">-1</button>
         </div>
     </div>
 </template>
